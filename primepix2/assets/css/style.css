@@ -498,3 +498,59 @@ footer {
 .rating label:hover ~ label {
     color: #f5c518;
 }
+
+.carousel-item img {
+    height: 450px; 
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+.carousel-inner img {
+    height: 250px;
+}
+}
+
+.category-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.category-btn {
+    background-color: #007bff; 
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-btn:hover {
+    background-color: #007bff; 
+    transform: translateY(-2px);
+    text-decoration: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.category-btn:active {
+    background-color: black;
+    transform: translateY(1px);
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .category-btn-group {
+        justify-content: center;
+    }
+
+    .category-btn {
+        flex: 1 0 100%;
+        text-align: center;
+    }
+}
