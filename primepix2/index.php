@@ -21,6 +21,39 @@ if (!$top_movies || !$new_movies || !$recommendations || !$genres) {
 
 ?>
 <main class="container mt-4">
+<div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/images/image1.jpg" class="d-block w-100" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/images/image2.jpg" class="d-block w-100" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/images/image3.jpeg" class="d-block w-100" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/images/image4.jpeg" class="d-block w-100" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/images/image5.jpeg" class="d-block w-100" alt="Image 3">
+        </div>
+    </div>
+</div>
+
+<style>
+   
+
+</style>
+
+<script>
+    $('#bannerCarousel').carousel({
+        interval: 2500, 
+        ride: 'carousel'
+    });
+</script>
+
+
     <br>
     <h2>Top Movies of the Month</h2><br>
     <div class="row">
