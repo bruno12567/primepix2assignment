@@ -15,7 +15,7 @@
 <body>
 <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.php">PrimePix</a>
+            <a class="navbar-brand" href="index.php"><a href="index.php"><img src="https://fontmeme.com/permalink/240811/c0e84bbb0dbb70936b3cc46cb5070fcc.png" alt="netflix-font" border="0"></a></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
