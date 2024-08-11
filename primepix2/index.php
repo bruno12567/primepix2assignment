@@ -81,17 +81,18 @@ if (!$top_movies || !$new_movies || !$recommendations || !$genres) {
     </div>
     <br>        
     <h2>Categories</h2><br>
-    <div class="btn-group mb-4" role="group" aria-label="Categories">
-        <?php if (!empty($genres['genres'])): ?>
-            <?php foreach ($genres['genres'] as $genre): ?>
-                <a href="category.php?category=<?php echo urlencode($genre['name']); ?>" class="btn btn-primary">
-                    <?php echo htmlspecialchars($genre['name']); ?>
-                </a>
-            <?php endforeach; ?>
-        <?php else: ?>
-            <p>No categories available.</p>
-        <?php endif; ?>
-    </div>
+<div class="category-btn-group mb-4" role="group" aria-label="Categories">
+    <?php if (!empty($genres['genres'])): ?>
+        <?php foreach ($genres['genres'] as $genre): ?>
+            <a href="category.php?category=<?php echo urlencode($genre['name']); ?>" class="category-btn">
+                <?php echo htmlspecialchars($genre['name']); ?>
+            </a>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <p>No categories available.</p>
+    <?php endif; ?>
+</div>
+
     <br>
     <br>        
     <h2>New Movies Coming</h2><br>
